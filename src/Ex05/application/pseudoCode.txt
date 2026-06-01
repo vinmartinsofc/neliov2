@@ -1,0 +1,14 @@
+numero da conta
+nome do titular
+valor de deposito inicial (opcional)
+
+numero encapsulado
+nome PODE ser alterado
+
+saldo não pode ser alterado livremente (apenas depósitos)
+o contrário, só por saque
+
+taxa de R$ 5 por operação
+saldo pode ser negativo
+
+
