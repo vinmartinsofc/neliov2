@@ -46,9 +46,8 @@ public class Account {
     }
 
     public void withdraw(double amount) {
-        taxPerOperation();
         System.out.println("Success!");
-        balance -= amount;
+        balance -= amount + 5.0;
 
         accountStatus();
 
@@ -59,7 +58,6 @@ public class Account {
     }
 
     public void deposit(double amount) {
-        taxPerOperation();
         System.out.println("Success!");
         balance += amount;
 
@@ -67,9 +65,6 @@ public class Account {
     }
 
 
-    public void taxPerOperation() {
-        balance -= 5;
-    }
 
     public String getHolder() {
         return holder;
