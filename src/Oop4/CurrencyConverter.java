@@ -1,4 +1,4 @@
-package Ex04;
+package Oop4;
 
 public class CurrencyConverter {
     private double exchangeRate;

@@ -1,4 +1,4 @@
-package Ex05.application.entities;
+package Oop5.entities;
 
 public class Account {
     private final int accountNumber;

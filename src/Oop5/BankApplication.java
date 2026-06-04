@@ -1,6 +1,6 @@
-package Ex05.application;
+package Oop5;
 
-import Ex05.application.entities.Account;
+import Oop5.entities.Account;
 
 import java.util.Scanner;
 

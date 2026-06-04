@@ -1,4 +1,4 @@
-package Ex02;
+package Oop2;
 
 public class Employee {
     private String name;

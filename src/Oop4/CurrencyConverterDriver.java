@@ -1,4 +1,4 @@
-package Ex04;
+package Oop4;
 
 import java.util.Scanner;
 

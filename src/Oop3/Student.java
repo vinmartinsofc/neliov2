@@ -1,4 +1,4 @@
-package Ex03;
+package Oop3;
 
 public class Student {
     private String name;

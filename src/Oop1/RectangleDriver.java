@@ -1,4 +1,4 @@
-package Ex01;
+package Oop1;
 import java.util.Scanner;
 
 public class RectangleDriver {

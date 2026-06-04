@@ -1,4 +1,4 @@
-package Ex01;
+package Oop1;
 
 public class Rectangle {
     private double width;
