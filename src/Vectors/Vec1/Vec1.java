@@ -1,8 +1,8 @@
-package Arrays;
+package Vectors.Vec1;
 
 import java.util.Scanner;
 
-public class Vec01 {
+public class Vec1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
