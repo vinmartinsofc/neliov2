@@ -1,6 +1,5 @@
 package Vectors.Vec3;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Vec3 {
