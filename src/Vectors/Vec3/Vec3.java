@@ -5,63 +5,51 @@ import java.util.Scanner;
 public class Vec3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        People[] people;
+        Person[] people;
 
         System.out.print("Enter N: ");
         int n = Integer.parseInt(scanner.nextLine());
-        people = new People[n];
+        people = new Person[n];
 
-        while (n != 0) {
+        for (int i = 0; i < people.length; i++) {
 
             System.out.println("Enter the name: ");
             String name = scanner.nextLine();
 
-            System.out.println("age? ");
+            System.out.print("age?: ");
             int age = Integer.parseInt(scanner.nextLine());
 
-            System.out.println("height? ");
+            System.out.print("height?: ");
             double height = Double.parseDouble(scanner.nextLine());
 
-            for (int i = 0; i < n; i++) {
-                people[i] = (new People(name, age, height));
-            }
-
-            n--;
+            people[i] = (new Person(name, age, height));
         }
-
 
         int totalSixteen = 0;
         double totalHeight = 0;
-        double underSixteenAgeSum = 0;
 
-        for (People ppl : people) {
-            totalHeight += ppl.getHeight();
+        for (Person person : people) {
+            totalHeight += person.getHeight();
+
+            if (person.getAge() < 16) {
+                totalSixteen++;
+            }
         }
 
         System.out.printf("Height Average: %.2f%n", totalHeight / people.length);
 
-        for (People pplAge : people) {
-            if (pplAge.getAge() < 16) {
-                totalSixteen++;
-                underSixteenAgeSum += pplAge.getAge();
-            }
+        double percentage = totalSixteen * 100 / (double) n;
 
-        }
+        System.out.printf("Under sixteen percentage: %.1f%%%n", percentage);
 
-        if (totalSixteen == 0) {
-            System.out.printf("%s%n","There's nobody under sixteen");
-        } else {
-            System.out.printf("Under sixteen percentage: %.1f%%%n", underSixteenAgeSum / totalSixteen);
-        }
 
-        for (People underSixteen : people) {
-            if (underSixteen.getAge() < 16) {
-                System.out.println(underSixteen.getName());
+        for (Person names : people) {
+            if (names.getAge() < 16) {
+                System.out.println(names.getName());
             }
         }
 
-
-
+        scanner.close();
     }
 
 

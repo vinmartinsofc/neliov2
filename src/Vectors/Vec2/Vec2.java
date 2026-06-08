@@ -8,22 +8,27 @@ public class Vec2 {
 
         System.out.print("Enter an Integer: ");
         int n = Integer.parseInt(scanner.nextLine());
-        int count = n;
+        int negativeCount = 0;
 
-        int[] vec2 = new int[n];
+        int[] numbers = new int[n];
 
-        for (int i = 0; i < vec2.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.print("Integers to add: ");
             int n2 = Integer.parseInt(scanner.nextLine());
-            vec2[i] = n2;
-            System.out.println("There is " + --count + " to add!");
+            numbers[i] = n2;
+
+            if (numbers[i] < 0) {
+                negativeCount++;
+            }
         }
 
-        if (vec2.length > 0) {
-            System.out.printf("%2s%n", "Negatives: ");
+        if (negativeCount > 0) {
+            System.out.println("Negatives: ");
+        } else {
+            System.out.println("There's no negative integers...");
         }
 
-        for (int intNumbers : vec2) {
+        for (int intNumbers : numbers) {
             if (intNumbers < 0) {
                 System.out.println(intNumbers);
             }

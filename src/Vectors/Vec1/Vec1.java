@@ -8,7 +8,7 @@ public class Vec1 {
         int n = scanner.nextInt();
         double[] vect = new double[n];
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < vect.length; i++) {
             vect[i] = scanner.nextDouble();
         }
         
