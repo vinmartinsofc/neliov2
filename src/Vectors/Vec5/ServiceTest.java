@@ -1,7 +1,6 @@
 package Vectors.Vec5;
 
 import java.security.SecureRandom;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ServiceTest {
@@ -25,9 +24,8 @@ public class ServiceTest {
 
 
         for (Room users : rooms) {
-
             if (users != null) {
-                System.out.printf("Room Nº %d occupied by %n%s%n%s%n ====== NEXT ====== %n", users.room(), users.name(), users.email());
+                System.out.printf("Room Nº %d occupied by %n%s%n%s%n====== NEXT ======%n", users.room(), users.name(), users.email());
             }
 
         }
