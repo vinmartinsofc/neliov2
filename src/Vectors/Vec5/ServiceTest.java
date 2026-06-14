@@ -18,9 +18,8 @@ public class ServiceTest {
                 String email = scanner.nextLine();
                 System.out.println("Room? ");
                 int room = Integer.parseInt(scanner.nextLine());
-                rooms[i] = new Room(name, email, room);
+                rooms[room] = new Room(name, email, room);
             }
-
 
 
         for (Room users : rooms) {
